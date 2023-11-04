@@ -1,0 +1,21 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 60px;
+    justify-content: space-between;
+}
+.navLink {
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    list-style: none;
+}
+.loginSection {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    margin-left: 10px;
+}
