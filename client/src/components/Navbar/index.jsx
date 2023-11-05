@@ -1,20 +1,30 @@
 import React from "react";
 import "./index.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  let navigate = useNavigate();
+
   return (
     <nav id="navbar">
-      <h2 className="logo">Project Pulse</h2>
+      <h2 className="logo" onClick={() => navigate("/")}>
+        Project Pulse
+      </h2>
       <ul className="navLink">
-        <li className="navItem">Home</li>
+        <li className="navItem" onClick={() => navigate("/")}>
+          Home
+        </li>
         <li className="navItem">Features</li>
         <li className="navItem">Pricing</li>
         <li className="navItem">Community</li>
       </ul>
       <div className="loginSection">
-        <button>Login</button>
-        <button>Sign Up</button>
+        <Link to="/user/login">
+          <button>Login</button>
+        </Link>
+        <Link to="/user/create">
+          <button>Sign Up</button>
+        </Link>
       </div>
     </nav>
   );

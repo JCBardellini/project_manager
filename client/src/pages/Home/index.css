@@ -1,20 +1,123 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: 750px;
+    height: 1000px;
+    background-image: linear-gradient(rgba(36,36,36,0.5), rgba(255, 255, 255, 0.3));
+    width: 100vw;
 }
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .title {
     font-size: 3rem;
     text-align: center;
 }
 .landingPageImg {
-    width: 600px;
+    width: 700px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .buttons {
     display: flex;
-    width: 250px;
+    width: 300px;
     justify-content: space-between;
+}
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer; 
+}
+.keyPointTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0;
+}
+.keyPointsContainer {
+    display: flex;
+    width: 1280px;
+    height: 400px;
+    margin-top: 100px;
+}
+.keyPoints h3 {
+    font-size: 1.5rem;
+}
+.keyPoints p {
+    color: rgb(149, 149, 149);
+}
+.dragAndDrop {
+    display: flex;
+    width: 1280px;
+    justify-content: space-evenly;
+    height: 500px;
+    align-items: center;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+.dragDropImg {
+    border-radius: 10px;
+    height: 400px;
+    margin-right: 50px;
+}
+.dragDropContainer {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.featureSection {
+        background-image: linear-gradient(rgba(36, 36, 36, 0.5), rgba(255, 255, 255, 0.3));
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 700px;
+}
+.featureContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    justify-content: space-between;
+    height: 500px;
+}
+.featureBox {
+    width: 275px;
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.featureTitleImg {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.featureIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #E2CC94 0%, #F5B81B 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.featureImg {
+    width: 36px;
+    height: 36px;  
 }

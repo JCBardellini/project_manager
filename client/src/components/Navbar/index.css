@@ -1,9 +1,10 @@
 #navbar {
     display: flex;
     align-items: center;
-    width: 95%;
+    width: 1280px;
     height: 60px;
     justify-content: space-between;
+    margin-top: 20px;
 }
 .navLink {
     display: flex;
@@ -11,6 +12,7 @@
     justify-content: space-around;
     list-style: none;
 }
+
 .loginSection {
     width: 200px;
     display: flex;
@@ -18,4 +20,5 @@
 }
 .logo {
     margin-left: 10px;
+    cursor: pointer;
 }
