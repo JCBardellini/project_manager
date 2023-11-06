@@ -1,0 +1,62 @@
+#mainReviewContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 700px;
+}
+.userImg {
+    width: 45px;
+    border-radius: 50%;
+    height: 45px;
+    object-fit: cover;
+}
+.reviewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1280px;
+    justify-content: space-evenly;
+}
+.eachReviewContainer {
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #939393;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.reviewUnderline {
+    width: 125px;
+    height: 1px;
+    background: linear-gradient(90deg, #666 0%, rgba(102, 102, 102, 0.00) 93.75%);
+    margin-bottom: 30px;
+    align-self: flex-start;
+}
+.userContainer {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    justify-content: space-evenly;
+}
+.eachReviewContainer p {
+    width: 325px;
+    text-align: center;
+}
+.reviewUserInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    margin-bottom: 15px;
+    height: 50px;
+}
+.reviewUserInfo p {
+    margin: 0;
+}
+.reviewUserInfo h4 {
+    margin: 0;
+}

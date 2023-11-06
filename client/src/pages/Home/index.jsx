@@ -15,6 +15,7 @@ import integrations from "../../assets/icons/intergrations.png";
 import "./index.css";
 import Navbar from "../../components/Navbar";
 import { useNavigate } from "react-router-dom";
+import Reviews from "../../components/Reviews";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -165,6 +166,9 @@ const Home = () => {
               );
             })}
           </div>
+        </section>
+        <section>
+          <Reviews />
         </section>
       </main>
     </div>
