@@ -121,3 +121,10 @@ h2 {
     width: 36px;
     height: 36px;  
 }
+.homeButton {
+    background: linear-gradient(135deg, #E2CC94 0%, #F5B81B 100%);
+    color: black;
+}
+.keyPoints {
+    text-align: center;
+}

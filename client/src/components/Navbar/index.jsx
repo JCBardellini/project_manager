@@ -20,10 +20,10 @@ const Navbar = () => {
       </ul>
       <div className="loginSection">
         <Link to="/user/login">
-          <button>Login</button>
+          <button className="homeButton">Login</button>
         </Link>
         <Link to="/user/create">
-          <button>Sign Up</button>
+          <button className="homeButton">Sign Up</button>
         </Link>
       </div>
     </nav>

@@ -3,6 +3,8 @@ const cors = require("cors");
 const morgan = require("morgan");
 const helmet = require("helmet");
 require("./config/db.js");
+const State = require("./models/State.js")
+const ClientContact = require("./models/ClientContact.js")
 
 // our port
 const PORT = 3000;
@@ -29,10 +31,26 @@ app.use( (req, res, next) => {
 
 // START ROUTES
 
-app.get("/", (req, res) => {
-    res.send("<h1>Hello World!</h1>")
+// GET ROUTES
+
+
+
+// POST ROUTES
+
+// our form for the homepage for customers info if they need help
+app.post("/", async (req, res) => {
+    try {
+        let dbResponse = await ClientContact.create(req.body)
+        res.status(201).send(dbResponse)
+    } catch (err) {
+        res.status(400).send("error getting the customer information")
+    }
 })
 
+
+// UPDATE ROUTES
+
+// DELETE ROUTES
 
 
 

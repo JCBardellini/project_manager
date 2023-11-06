@@ -10,6 +10,7 @@
     border-radius: 50%;
     height: 45px;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 .reviewContainer {
     display: flex;
@@ -59,4 +60,8 @@
 }
 .reviewUserInfo h4 {
     margin: 0;
+}
+.reviewButton {
+    background: linear-gradient(135deg, #E2CC94 0%, #F5B81B 100%);
+    color: black;
 }

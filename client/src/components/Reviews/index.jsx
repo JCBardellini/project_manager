@@ -126,7 +126,7 @@ const Reviews = () => {
           );
         })}
       </div>
-      <button onClick={toggleReviews}>
+      <button onClick={toggleReviews} className="reviewButton">
         {reviewsDisplay ? "Show Less" : "Show More"}
       </button>
     </div>

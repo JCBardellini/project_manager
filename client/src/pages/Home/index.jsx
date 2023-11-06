@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import dashboard from "../../assets/imgs/Dashboard.png";
 import launch from "../../assets/imgs/launch.png";
 import money from "../../assets/imgs/money-bag.png";
@@ -16,6 +16,8 @@ import "./index.css";
 import Navbar from "../../components/Navbar";
 import { useNavigate } from "react-router-dom";
 import Reviews from "../../components/Reviews";
+import ContactForm from "../../components/ContactForm";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -114,8 +116,10 @@ const Home = () => {
           with lighting-fast project deliveries, beating every deadline!
         </p>
         <div className="buttons">
-          <button>Learn More</button>
-          <button onClick={createUser}>Begin Your adventure</button>
+          <button className="homeButton">Learn More</button>
+          <button onClick={createUser} className="homeButton">
+            Begin Your adventure
+          </button>
         </div>
         <img src={dashboard} alt="dashboard image" className="landingPageImg" />
       </header>
@@ -170,7 +174,11 @@ const Home = () => {
         <section>
           <Reviews />
         </section>
+        <section>
+          <ContactForm />
+        </section>
       </main>
+      <Footer />
     </div>
   );
 };
