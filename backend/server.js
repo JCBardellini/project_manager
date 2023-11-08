@@ -6,6 +6,7 @@ require("./config/db.js");
 const State = require("./models/State.js")
 const User = require("./models/User.js")
 const ClientContact = require("./models/ClientContact.js")
+const path = require("path")
 
 // our port
 const PORT = 3000;
