@@ -28,7 +28,7 @@ app.use( (req, res, next) => {
         req.url = req.url.replace("/server", "");
     }; // allows us to host it on render
     next();
-})
+});
 
 // START ROUTES
 

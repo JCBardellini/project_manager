@@ -1,8 +1,64 @@
-# React + Vite
+# Project Pulse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Introduction
+
+Project Pulse is an Employee Management System designed to help businesses keep track of their employees' details, including names, positions, and more. It provides a user-friendly interface for managing employee information efficiently.
+
+## Features
+
+- Employee Profile Management
+- Profile Picture Assignment
+- Employee Deletion
+- User-Friendly Interface
+- Employee List Display
+- more to come
+
+## Technologies
+
+- React.js
+- Node.js
+- Express.js
+- MongoDB
+- Axios
+- Material-UI
+
+## Installation
+
+1. Clone the repository:
+
+   git clone https://github.com/yourusername/project-pulse.git
+
+2. install dependencies on the frontend
+
+3. install dependencies on the backend
+
+4. create your own mongodb and add your connection string to connect to server.js
+
+## Usage
+
+- add new employees
+- look and create task
+- have to add the grab and drop functionality
+
+## Usage
+
+Project Pulse allows you to manage your employee profiles with ease. Here are some key actions you can perform:
+
+- **Add New Employees**: To add new employees to your database, click the "Add Employee" button and fill out the required information in the form.
+
+- **Create and Manage Tasks**: You can create and manage tasks for your employees, helping you stay organized and keep track of work assignments.
+
+- **Drag and Drop Functionality**: The application provides an intuitive drag-and-drop feature to reorganize the employee list.
+
+For a live demonstration, you can access the [Live Site](https://project-pulse-bkqz.onrender.com).
