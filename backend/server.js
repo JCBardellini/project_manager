@@ -23,7 +23,7 @@ app.use(morgan('dev')); // log requests to console
 
 app.use(helmet()); // add security headers
 
-app.use(express.static(path.join(__dirname, "..client/dist")))
+app.use(express.static(path.join(__dirname, "../client/dist")))
 app.use( (req, res, next) => {
     if (req.path.startsWith("/server")) {
         req.url = req.url.replace("/server", "");
