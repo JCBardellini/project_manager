@@ -178,7 +178,6 @@ const Home = () => {
           <ContactForm />
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

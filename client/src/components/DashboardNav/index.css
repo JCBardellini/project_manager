@@ -1,0 +1,30 @@
+#dashboardContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#dashboardNav {
+    width: 500px;
+}
+.dashNavLinks {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.dashNavLinks li {
+    cursor: pointer;
+}
+#searchBar {
+    border: none;
+    height: 30px;
+    width: 300px;
+    border-radius: 6px;
+}
+.dashUserContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dashUserContainer img {
+    width: 40px;
+}

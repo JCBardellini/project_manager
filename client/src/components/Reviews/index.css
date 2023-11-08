@@ -65,3 +65,6 @@
     background: linear-gradient(135deg, #E2CC94 0%, #F5B81B 100%);
     color: black;
 }
+.employeeRemove {
+    margin-right: 10px;
+}

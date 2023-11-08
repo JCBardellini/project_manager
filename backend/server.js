@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const helmet = require("helmet");
 require("./config/db.js");
 const State = require("./models/State.js")
+const User = require("./models/User.js")
 const ClientContact = require("./models/ClientContact.js")
 
 // our port
@@ -33,14 +34,36 @@ app.use( (req, res, next) => {
 
 // GET ROUTES
 
-
+// getting the employees from mongodb
+app.get("/dashboard/employees", async (req, res) => {
+    try{
+        let employees = await User.find()
+        return res.status(200).send(employees)
+        }catch(err){
+            return res.status(500).send(err.message)
+        }
+})
 
 // POST ROUTES
 
 // our form for the homepage for customers info if they need help
+app.post("/dashboard/new/employee", async (req, res) => {
+    console.log(req.body);
+    try {
+        let dbResponse = await User.create(req.body);
+        res.status(201).send(dbResponse);
+    } catch (err) {
+        res.status(400).send("Error creating a new employee");
+    }
+});
+
+
+
 app.post("/", async (req, res) => {
+    console.log(req.body);
     try {
         let dbResponse = await ClientContact.create(req.body)
+        
         res.status(201).send(dbResponse)
     } catch (err) {
         res.status(400).send("error getting the customer information")
@@ -48,9 +71,30 @@ app.post("/", async (req, res) => {
 })
 
 
+
 // UPDATE ROUTES
 
+app.put("/dashboard/employees/:editEmployee", async (req, res) => {
+    try {
+        const updatedUser = req.body;
+        // find user by id and update it with the request body
+        const editedUser = await User.findByIdAndUpdate(req.params.editEmployee, updatedUser, {new: true} )
+        }
+     catch (err) {
+        res.status(400).send('could not update')
+     }
+})
 // DELETE ROUTES
+
+// delete for each employee
+app.delete("/dashboard/employees/:employeeId", async (req, res) => {
+    try {
+        const deleteEmployee = await User.findByIdAndDelete(req.params.employeeId);
+        res.status(200).send(deleteEmployee)
+    } catch (err) {
+        res.status(500).send(err.message);
+    }
+})
 
 
 

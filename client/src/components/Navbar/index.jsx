@@ -12,14 +12,14 @@ const Navbar = () => {
       </h2>
       <ul className="navLink">
         <li className="navItem" onClick={() => navigate("/")}>
-          Home
+          Discover
         </li>
         <li className="navItem">Features</li>
         <li className="navItem">Pricing</li>
         <li className="navItem">Community</li>
       </ul>
       <div className="loginSection">
-        <Link to="/user/login">
+        <Link to="/dashboard">
           <button className="homeButton">Login</button>
         </Link>
         <Link to="/user/create">

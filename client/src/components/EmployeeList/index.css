@@ -1,0 +1,54 @@
+#employeeList {
+    width: 275px;
+    height: 500px;
+    background-color: #4287f5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(226, 226, 226, 0.2)
+}
+.employeesListContainer {
+    max-height: 450px;
+    overflow-y: scroll;
+}
+.employeeTitle {
+    margin: 0;
+    text-align: center;
+    padding-top: 10px;
+}
+.employeeCatalog {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.employeeNav {
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+}
+.employeeHeader {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.employeeImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+.employeeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.employeeEdit {
+    margin-right: 5px;
+}
+.employeeAdd {
+    margin-right: 13px;
+}

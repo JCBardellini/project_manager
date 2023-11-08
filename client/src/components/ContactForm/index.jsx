@@ -42,7 +42,10 @@ const ContactForm = () => {
       const formResponse = await axios({
         method: "POST",
         url: "/server/",
-        data: contactFormData, // data is found in req.body
+        data: {
+          ...contactFormData,
+          number: contactFormData.number.replace(/\s/g, ""),
+        }, // data is found in req.body
       });
       console.log(formResponse); // logging the data
       setCustomerForm([...customerForm, formResponse.data]);

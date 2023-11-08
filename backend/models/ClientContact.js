@@ -8,12 +8,12 @@ const clientContactSchema = new mongoose.Schema( {
         required: true,
         validate: [
             {
-            validator: (v) => /^\d+[\d()-]*\d+$/.test(v),
-            message: "The phone number must container only numbers and parentheses",
+            validator: (v) => {
+                 let isGood = /(\+?\d{1,3}[-\s]?)?(\(?\d+\)?[-\s]?)*\d+/.test(v)
+                 console.log(isGood);
+                 return isGood
             },
-            {
-            validator: (v) => v.length <= 10,
-            message: "The phone number must not exceed 10 characters in length",
+            message: "The phone number must container only numbers and parentheses",
             },
         ] 
     },

@@ -21,18 +21,10 @@ const Footer = () => {
         <div className="footerMiddle">
           <h3>Quick Links</h3>
           <ul>
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Pricing</a>
-            </li>
-            <li>
-              <a>Features</a>
-            </li>
-            <li>
-              <a>Community</a>
-            </li>
+            <li>Discover</li>
+            <li>Pricing</li>
+            <li>Features</li>
+            <li>Community</li>
           </ul>
         </div>
         <div className="footerRight">
